@@ -12,9 +12,8 @@ import javax.swing.JOptionPane;
  */
 public class Principal extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Principal
-     */
+    String sexe, curs;
+    
     public Principal() {
         initComponents();
     }
@@ -28,6 +27,7 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         Nom = new java.awt.Label();
         Cognom = new java.awt.Label();
         txtNom = new javax.swing.JTextField();
@@ -73,21 +73,21 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel2.setText("Curs:");
 
-        Curs2.setText("DAW");
+        Curs2.setText("1DAM-B");
         Curs2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Curs2ActionPerformed(evt);
             }
         });
 
-        Curs1.setText("DAM");
+        Curs1.setText("1DAM-A");
         Curs1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Curs1ActionPerformed(evt);
             }
         });
 
-        Curs3.setText("NS/NC");
+        Curs3.setText("1DAW-A");
         Curs3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Curs3ActionPerformed(evt);
@@ -175,39 +175,40 @@ public class Principal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void Sexe1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Sexe1ActionPerformed
-       
-    }//GEN-LAST:event_Sexe1ActionPerformed
-
-    private void SexeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SexeActionPerformed
-        
-    }//GEN-LAST:event_SexeActionPerformed
-
-    private void Sexe2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Sexe2ActionPerformed
-        
-    }//GEN-LAST:event_Sexe2ActionPerformed
-
-    private void Curs2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Curs2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Curs2ActionPerformed
-
-    private void Curs1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Curs1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Curs1ActionPerformed
-
-    private void Curs3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Curs3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Curs3ActionPerformed
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String nomSencer = txtNom.getText() + " " + this.txtCognom.getText();
-        String genere;
         
-        String missatge = "Et dius: " + nomSencer;
+        
+        String missatge = "Et dius: " + nomSencer+"\n" + "Ets: " + sexe + "\n" + "Curses: " + curs;
+        
 
-        JOptionPane.showMessageDialog(null, missatge,
+        JOptionPane.showMessageDialog(null, missatge, 
                 "Benvingut " + nomSencer, JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void Curs1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Curs1ActionPerformed
+        curs = "1DAM-A";
+    }//GEN-LAST:event_Curs1ActionPerformed
+
+    private void Curs2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Curs2ActionPerformed
+        curs = "1DAM-B";
+    }//GEN-LAST:event_Curs2ActionPerformed
+
+    private void Sexe2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Sexe2ActionPerformed
+        sexe = "NS/NC";
+    }//GEN-LAST:event_Sexe2ActionPerformed
+
+    private void SexeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SexeActionPerformed
+        sexe = "Noi";
+    }//GEN-LAST:event_SexeActionPerformed
+
+    private void Sexe1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Sexe1ActionPerformed
+        sexe = "Noia";
+    }//GEN-LAST:event_Sexe1ActionPerformed
+
+    private void Curs3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Curs3ActionPerformed
+        curs = "1DAW-A";
+    }//GEN-LAST:event_Curs3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -253,6 +254,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JRadioButton Sexe;
     private javax.swing.JRadioButton Sexe1;
     private javax.swing.JRadioButton Sexe2;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

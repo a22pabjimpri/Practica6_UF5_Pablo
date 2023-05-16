@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
+    </Component>
+  </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
   </Properties>
@@ -159,7 +163,7 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="Curs2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="DAW"/>
+        <Property name="text" type="java.lang.String" value="1DAM-B"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Curs2ActionPerformed"/>
@@ -167,7 +171,7 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="Curs1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="DAM"/>
+        <Property name="text" type="java.lang.String" value="1DAM-A"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Curs1ActionPerformed"/>
@@ -175,7 +179,7 @@
     </Component>
     <Component class="javax.swing.JRadioButton" name="Curs3">
       <Properties>
-        <Property name="text" type="java.lang.String" value="NS/NC"/>
+        <Property name="text" type="java.lang.String" value="1DAW-A"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Curs3ActionPerformed"/>
