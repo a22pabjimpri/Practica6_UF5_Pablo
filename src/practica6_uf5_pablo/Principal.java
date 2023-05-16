@@ -176,15 +176,15 @@ public class Principal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void Sexe1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Sexe1ActionPerformed
-        // TODO add your handling code here:
+       
     }//GEN-LAST:event_Sexe1ActionPerformed
 
     private void SexeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SexeActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_SexeActionPerformed
 
     private void Sexe2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Sexe2ActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_Sexe2ActionPerformed
 
     private void Curs2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Curs2ActionPerformed
@@ -201,6 +201,8 @@ public class Principal extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String nomSencer = txtNom.getText() + " " + this.txtCognom.getText();
+        String genere;
+        
         String missatge = "Et dius: " + nomSencer;
 
         JOptionPane.showMessageDialog(null, missatge,
